@@ -1,0 +1,1174 @@
+:root {
+  --bg-color: #fcf8ee;
+  --text-color: #4a3b32;
+  --accent-pink: #df7eab;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+.big-text,
+.names-text,
+p,
+span,
+div,
+a {
+  font-family: "Caveat", cursive;
+}
+
+/* =========================================================
+           ГЛАВНЫЙ ЭКРАН
+        ========================================================= */
+
+.hero {
+  padding: 0 20px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-title {
+  width: 85%;
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  display: block;
+}
+
+.kids-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: -25px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.kid-photo {
+  max-width: 300px;
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kid-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .kid-photo {
+    max-width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .kid-photo {
+    max-width: 200px;
+    height: 250px;
+  }
+}
+
+.paper-name-container {
+  position: relative;
+
+  width: 95%;
+  max-width: 480px;
+
+  z-index: 2;
+
+  margin: 30px auto 0;
+}
+
+.paper-name-container img {
+  width: 100%;
+
+  display: block;
+
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+.names-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 3rem;
+
+  font-weight: 600;
+
+  color: var(--text-color);
+
+  width: 100%;
+
+  letter-spacing: 1px;
+}
+
+@media (max-width: 450px) {
+  .names-text {
+    font-size: 2.5rem;
+  }
+}
+
+.names-text span {
+  color: var(--accent-pink);
+
+  font-size: 2.2rem;
+}
+
+.card-block {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin: 30px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.big-text {
+  font-size: 4rem;
+
+  color: var(--text-color);
+
+  margin-bottom: 15px;
+
+  letter-spacing: 1px;
+}
+
+.invite__text {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.invite__title {
+  margin-top: 25px;
+  color: var(--accent-pink);
+  font-size: 3.5rem;
+}
+
+@media (max-width: 800px) {
+  .big-text {
+    font-size: 3rem;
+  }
+
+  .invite__text {
+    font-size: 2rem;
+  }
+
+  .invite__title {
+    font-size: 3rem;
+  }
+}
+
+.invite__img {
+  width: 95%;
+
+  margin: 20px auto 40px;
+}
+
+.invite__img img {
+  width: 100%;
+}
+
+.countdown-container {
+  margin: 40px 0 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.time-box {
+  text-align: center;
+}
+
+.time-num {
+  font-size: 4rem;
+
+  font-weight: 600;
+
+  display: block;
+
+  color: var(--text-color);
+}
+
+@media (max-width: 700px) {
+  .time-num {
+    font-size: 3rem;
+  }
+}
+
+.time-label {
+  font-size: 1.2rem;
+
+  color: #888;
+
+  text-transform: uppercase;
+}
+
+.invite__garland img {
+  width: 100%;
+}
+
+.adults-section {
+  padding: 50px 20px;
+
+  background: var(--bg-color);
+}
+
+.adults-section .big-text {
+  margin-bottom: 30px;
+}
+
+.adult-couple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adults__img {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.adults__img-picture {
+  max-width: 400px;
+  width: 100%;
+}
+
+.crown-img {
+  position: absolute;
+
+  top: -65px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 180px;
+
+  z-index: 2;
+}
+
+.crown-parvona {
+  top: -5%;
+  left: 60%;
+}
+
+.crown-roman {
+  top: -10%;
+  left: 30%;
+}
+
+.adult-photo {
+  width: 100%;
+
+  border-radius: 12px;
+
+  border: 4px solid #fff;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  background: #fff;
+}
+
+.adults__title {
+  font-size: 4.5rem;
+
+  margin-top: 15px;
+
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .adults__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .adults__title {
+    font-size: 2.5rem;
+  }
+}
+
+.location .big-text {
+  margin-bottom: 0px;
+}
+
+.loc-card {
+  margin-bottom: 50px;
+}
+
+.loc-img {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #f7f3e9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.loc-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.location__title {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.location__subtitle {
+  font-size: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .location__title {
+    font-size: 2rem;
+  }
+
+  .location__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .location__title,
+  .location__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.gifts-section {
+  position: relative;
+
+  /*
+    Сама секция никогда не становится шире viewport.
+  */
+  width: min(94vw, 620px);
+
+  /*
+    Высота определяется контентом.
+    На десктопе сохраняем примерно исходную высоту.
+  */
+  min-height: 1000px;
+
+  margin: 60px auto 0;
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+
+  /*
+    ВАЖНО:
+    сердце может выходить за пределы самой секции,
+    но не должно создавать горизонтальный scroll страницы.
+  */
+  overflow: visible;
+}
+
+/* =========================================
+   HEART
+   ========================================= */
+
+.heart-bg-svg {
+  position: absolute;
+
+  /*
+    Десктоп:
+    620px × 160% = примерно 992px.
+
+    Но самое главное — ограничиваем ширину viewport.
+    Поэтому SVG никогда не сможет создать
+    горизонтальный overflow страницы.
+  */
+  width: min(170%, calc(100vw - 24px));
+  height: auto;
+
+  /*
+    Сердце начинается сверху секции.
+    Никакого translateY(-50%).
+  */
+  top: 0;
+  left: 50%;
+
+  z-index: -1;
+
+  transform: translateX(-50%);
+  transform-origin: center top;
+
+  animation: heartscale 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes heartscale {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1.04);
+  }
+}
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.gifts-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  margin-inline: auto;
+
+  padding-top: 270px;
+
+  text-align: center;
+}
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.gifts__title {
+  width: min(100%, 320px);
+
+  margin: 0 auto 25px;
+
+  font-size: 3rem;
+  line-height: 1.02;
+
+  color: #fff;
+}
+
+/* =========================================
+   TEXT
+   ========================================= */
+
+.gifts__text {
+  margin: 12px auto;
+
+  font-size: 2rem;
+  line-height: 1.18;
+
+  color: #fff;
+}
+
+.gifts__text span {
+  position: relative;
+}
+
+.gifts__text span::after {
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  content: "";
+
+  width: 100%;
+  height: 3px;
+
+  background-color: #fff;
+}
+
+/* =========================================
+   18+
+   ========================================= */
+
+.gifts-18 {
+  margin-top: 40px;
+
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.12;
+
+  color: #fff;
+}
+
+.gifts-18 span {
+  font-size: 2.7rem;
+}
+
+.gifts-18 span:last-of-type {
+  color: #ff4d4d;
+}
+
+/* =========================================
+   ADAPTIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .gifts__title {
+    margin-bottom: 20px;
+  }
+
+  .gifts-content {
+    max-width: 800px;
+    padding-top: 250px;
+    margin-inline: 0;
+  }
+
+  .gifts-18 {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gifts-section {
+    min-height: 900px;
+  }
+
+  .gifts-content {
+    transform: translateY(-60px);
+    padding-top: 80px;
+  }
+
+  .gifts__title {
+    margin-bottom: 160px;
+    color: var(--text-color);
+  }
+
+  .heart-bg-svg {
+    top: 6%;
+  }
+}
+
+@media (max-width: 800px) {
+  .gifts__title {
+    margin-bottom: 120px;
+    color: var(--text-color);
+  }
+
+  .gifts-18 {
+    max-width: 400px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .gifts-section {
+    min-height: 0;
+  }
+
+  .gifts-content {
+    padding-top: 40px;
+  }
+
+  .gifts__text {
+    max-width: 300px;
+    margin-top: 20px;
+    font-size: 1.7rem;
+  }
+
+  .gifts-18 {
+    max-width: none;
+    color: var(--text-color);
+    margin-top: 180px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .gifts-18 {
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gifts__title {
+    font-size: 2.5rem;
+  }
+
+  .heart-bg-svg {
+    top: 8%;
+  }
+
+  .gifts__text {
+    font-size: 1.5rem;
+  }
+
+  .gifts-content .gifts__text:nth-last-child(1 of .gifts__text) {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heart-bg-svg {
+    top: 12%;
+  }
+
+  .gifts-18 {
+    margin-top: 150px;
+    font-size: 1.7rem;
+  }
+
+  .gifts__text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .gifts-content .gifts__text {
+    margin-block: 0;
+  }
+}
+
+.submit .big-text,
+.dresscode .big-text,
+.schedule .big-text {
+  font-size: 5rem;
+}
+
+.submit__subtitle,
+.dresscode__subtitle {
+  font-size: 2.5rem;
+}
+
+.dresscode__text {
+  font-size: 2.2rem;
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .submit .big-text,
+  .dresscode .big-text,
+  .schedule .big-text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .submit .big-text,
+  .dresscode .big-text,
+  .schedule .big-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .submit .big-text,
+  .dresscode .big-text,
+  .schedule .big-text {
+    font-size: 2rem;
+  }
+
+  .submit__subtitle,
+  .dresscode__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .dresscode__text {
+    font-size: 1.8rem;
+  }
+}
+
+.submit .card-block {
+  box-shadow: none;
+}
+
+.calendar-box {
+  border: 2px solid var(--accent-pink);
+
+  border-radius: 30px;
+
+  padding: 20px;
+
+  max-width: 350px;
+
+  margin: 0 auto;
+
+  background: #fff;
+}
+
+.days-grid {
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.day-header {
+  color: #888;
+
+  font-size: 1.2rem;
+
+  font-weight: 600;
+}
+
+.day {
+  font-size: 1.5rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  height: 35px;
+}
+
+.wedding-day {
+  position: relative;
+
+  color: transparent;
+}
+
+.wedding-day::before {
+  content: "🖤";
+
+  color: #222;
+
+  font-size: 2rem;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  40% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  80% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.btn-confirm {
+  background-color: var(--accent-pink);
+
+  color: white;
+
+  padding: 15px 40px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  font-size: 1.6rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  box-shadow: 0 4px 10px rgba(223, 126, 171, 0.4);
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  margin: 20px 0;
+
+  transition: all 0.6s;
+}
+
+@media (max-width: 500px) {
+  .btn-confirm {
+    font-size: 1.4rem;
+  }
+}
+
+.btn-confirm:hover,
+.btn-confirm:focus,
+.btn-confirm:active {
+  transform: scale(1.2);
+}
+
+.timeline-card {
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 50px 25px 60px;
+
+  margin: 40px 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  overflow: hidden;
+}
+
+.timeline-container {
+  position: relative;
+
+  width: min(100%, 1450px);
+
+  margin: 45px auto 0;
+
+  padding: 35px 0 55px;
+}
+
+/* =========================================================
+   ПУНКТИРНАЯ ЛИНИЯ
+   ========================================================= */
+
+#path-svg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   СЕРДЦЕ НА ЛИНИИ
+   ========================================================= */
+
+#scroll-heart {
+  position: absolute;
+
+  width: 70px;
+  height: auto;
+
+  z-index: 20;
+
+  left: 50%;
+  top: 0;
+
+  transform: translate(-50%, -50%);
+
+  display: block;
+
+  pointer-events: none;
+
+  transition: none;
+}
+
+/* =========================================================
+   СТРОКА TIMELINE
+   ========================================================= */
+
+.timeline-row {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  min-height: 180px;
+
+  margin-bottom: 95px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.timeline-row:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   ПОЛОВИНЫ
+   ========================================================= */
+
+.timeline-half {
+  width: 50%;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+}
+
+/* =========================================================
+   ЛЕВАЯ СТОРОНА
+   ТЕКСТ ← ПУНКТИР
+   ========================================================= */
+
+.row-left .left-side {
+  justify-content: flex-end;
+
+  padding-right: 55px;
+  padding-left: 20px;
+
+  text-align: right;
+}
+
+/* =========================================================
+   ПРАВАЯ СТОРОНА
+   ПУНКТИР → ТЕКСТ
+   ========================================================= */
+
+.row-right .right-side {
+  justify-content: flex-start;
+
+  padding-left: 55px;
+  padding-right: 20px;
+
+  text-align: left;
+}
+
+/* =========================================================
+   ДЕКОРАТИВНЫЕ ИКОНКИ
+   ========================================================= */
+
+/*
+   Меняешь только это значение,
+   чтобы увеличить / уменьшить ВСЕ иконки.
+
+   Было у тебя 95px.
+   Сейчас ставим 150px.
+*/
+
+.timeline-container {
+  --timeline-icon-size: 250px;
+
+  /*
+    Расстояние между центральным пунктиром
+    и ближайшим краем иконки.
+  */
+  --timeline-icon-gap: 250px;
+}
+
+.timeline-icon-img {
+  position: absolute;
+
+  top: 50%;
+
+  width: var(--timeline-icon-size);
+  height: auto;
+
+  transform: translateY(-50%);
+
+  z-index: 4;
+
+  pointer-events: none;
+
+  display: block;
+}
+
+/*
+   Текст слева → иконка справа
+*/
+
+.row-left .timeline-icon-img {
+  left: calc(50% + var(--timeline-icon-gap));
+}
+
+/*
+   Текст справа → иконка слева
+*/
+
+.row-right .timeline-icon-img {
+  right: calc(50% + var(--timeline-icon-gap));
+}
+
+/* =========================================================
+   ТЕКСТОВЫЙ БЛОК
+   ========================================================= */
+
+.time-content {
+  width: min(100%, 470px);
+
+  min-width: 0;
+}
+
+.time-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 5rem;
+
+  line-height: 1;
+
+  color: var(--accent-pink);
+
+  font-weight: 600;
+}
+
+.time-content strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 2.5rem;
+
+  line-height: 1.15;
+}
+
+.time-content p {
+  margin: 0;
+
+  font-size: 1.8rem;
+
+  line-height: 1.2;
+
+  color: #555;
+}
+
+@media (max-width: 1000px) {
+  .timeline-container {
+    --timeline-icon-size: 200px;
+    --timeline-icon-gap: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .timeline-container {
+    --timeline-icon-size: 150px;
+    --timeline-icon-gap: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .time-content h3 {
+    font-size: 4rem;
+  }
+
+  .time-content strong {
+    font-size: 2rem;
+  }
+
+  .time-content p {
+    font-size: 1.7rem;
+  }
+
+  .timeline-container {
+    --timeline-icon-size: 200px;
+    --timeline-icon-gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .row-left .left-side {
+    padding-left: 0;
+  }
+
+  .row-right .right-side {
+    padding-right: 0;
+  }
+
+  .time-content h3 {
+    font-size: 3.5rem;
+  }
+
+  .time-content strong {
+    font-size: 1.8rem;
+  }
+
+  .time-content p {
+    font-size: 1.5rem;
+  }
+
+  .timeline-container {
+    --timeline-icon-size: 150px;
+    --timeline-icon-gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .time-content h3 {
+    font-size: 3rem;
+  }
+
+  .time-content strong {
+    font-size: 1.6rem;
+  }
+
+  .time-content p {
+    font-size: 1.4rem;
+  }
+
+  .timeline-container {
+    --timeline-icon-size: 120px;
+    --timeline-icon-gap: 20px;
+  }
+}
+
+.map {
+  padding-block: 20px;
+}
+
+.map-container {
+  width: 100%;
+
+  height: 400px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
